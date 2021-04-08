@@ -1,8 +1,4 @@
-// // pages/me/me.js
-// const app = getApp();
-// let userInfo = app.globalData.userInfo;
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -71,28 +67,28 @@ Page({
       openid:ui.openid
     })
     console.log(this.data.userInfo)
-    // wx.cloud.callFunction({
-    //   name:'getOrder',
-    //   data:{
-    //     openid:ui.openid
-    //   }
-    // }).then(res=>{
-    //   let len=res.result.data.length
-    //   if(len>10&&len<15){
-    //     this.setData({
-    //       rank:2
-    //     })
-    //   }else if(len>=15&&len<20){
-    //     this.setData({
-    //       rank:3
-    //     })
-    //   }else if(len>=20){
-    //     this.setData({
-    //       rank:4
-    //     })
-    //   }
-      // console.log(this.data.userInfo)
-    // })
+    wx.cloud.callFunction({
+      name:'getOrder',
+      data:{
+        openid:ui.openid
+      }
+    }).then(res=>{
+      let len=res.result.data.length
+      if(len>10&&len<15){
+        this.setData({
+          rank:2
+        })
+      }else if(len>=15&&len<20){
+        this.setData({
+          rank:3
+        })
+      }else if(len>=20){
+        this.setData({
+          rank:4
+        })
+      }
+      console.log(this.data.userInfo)
+    })
   },
 
   /**
