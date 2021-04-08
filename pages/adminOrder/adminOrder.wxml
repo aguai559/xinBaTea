@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="order">
+    全部订单
+  </view>
+  <view class="main">
+    <scroll-view class="scroll" scroll-y="true">
+    <view class="orderItem" wx:for="{{orderList}}" wx:key='index'>
+      <view class="num" wx:if="{{item.num}}">桌台：{{item.num}}</view>
+      <view class="user">用户名：{{item.username}}</view>
+      <view class="buy">
+        购买物品:
+        <!-- <text wx:for="{{item.buy}}" wx:for-item='buyItem' wx:for-index='buyIndex' wx:key='buyIndex'>{{buyItem}} </text> -->
+        <text>{{item.buy}}</text>
+      </view>
+      <text class="time">下单时间{{item.date}}</text>
+      <view class="finish">
+        是否出单：{{item.isfinish}}
+        <button bindtap="finish" class="btn" type="primary" data-id='{{index}}'>确认出单</button>
+      </view>
+    </view>
+  </scroll-view>
+  </view>
+</view>

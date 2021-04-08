@@ -1,0 +1,154 @@
+@import '/icon/icon.wxss';
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color:rgb(242,243,244);
+}
+.container swiper{
+  width: 100%;
+  height: 40vh;
+}
+.container swiper image{
+  width: 100%;
+  height: 100%;
+}
+
+/* .container .mian {
+  width: 95%;
+  background-color: white;
+} */
+.order{
+  border-radius: 40rpx;
+  
+  width: 95%;
+  background-color: white;
+  margin: 20rpx auto;
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+}
+.order .here,.take{
+  width: 50%;
+  height: 30vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.txt{
+  color: green;
+  /* margin-bottom: 30rpx; */
+}
+.center{
+  border:1rpx solid rgb(167,213,0);
+  height: 18vh;
+  position: absolute;
+  top: 48%;
+  
+}
+/* .order .here, image{
+  width: 100%;
+  height: 100%;
+}
+.order .take, image{
+  width: 100%;
+  height: 100%;
+} */
+.icon-diancan,.icon-scan{
+  /* position: absolute;
+  left: 86rpx;
+  top: 80rpx; */
+  font-size: 250rpx;
+  color: green;
+}
+/* .order .take text{
+  position: absolute;
+  left: 126rpx;
+  top:  80rpx;
+  font-size: 30rpx;
+  color: green;
+} */
+.flash{
+  width: 95%;
+  height: 380rpx;
+  background:rgb(255, 138,18);
+  padding: 10rpx 10rpx;
+  box-sizing: border-box;
+  margin: 20rpx auto;
+  border-radius: 40rpx;
+}
+.flash .flash-top{
+  color: #fff;
+}
+.flash .flash-bottom{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 10rpx;
+}
+.flash .flash-bottom .flash-item{
+  width: 30%;
+  height: 300rpx;
+  border: 1px solid #000;
+  background: #fff;
+}
+.flash .flash-bottom .flash-item image{
+  height: 200rpx;
+  width: 100%;
+}
+.flash-item .text{
+  border-top-style: dashed;
+  border-top-width: 2rpx;
+  display: block;
+}
+/* .flash-item .price{
+  margin-top: 10rpx;
+} */
+
+.flash-item .price.nprice{
+  color: red;
+  margin-right: 10rpx;
+}
+.flash-item .price .oprice{
+  text-decoration:line-through;
+  font-size: 25rpx;
+  color: #999;
+}
+.bottom{
+  width: 95%;
+  height: 15vh;
+  margin: 20rpx auto;
+  background: white;
+  border-radius: 25rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  /* margin-bottom: 10vh; */
+}
+.title{
+  margin-bottom: 20rpx;
+  font-weight: bold;
+}
+.main{
+  display: flex;
+}
+.map,.about{
+  width: 150rpx;
+  height: 10vh;
+  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* margin-right: 10rpx; */
+}
+.location,.book{
+  display: inline-block;
+  width: 65rpx;
+  height: 5vh;
+  /* background:deepskyblue; */
+  color: rgb(6, 165, 20);
+  text-align: center;
+  line-height: 5vh;
+  font-size: 40rpx;
+  margin: 0 auto;
+}

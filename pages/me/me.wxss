@@ -1,0 +1,177 @@
+/* pages/me/me.wxss */
+@import '/icon/icon.wxss';
+.container{
+  /* background: #ccc; */
+  height: 100vh;
+  width: 100%;
+  background: rgb(243,244,245);
+}
+.back{
+  width: 100%;
+  height: 35vh;
+  /* background: pink; */
+}
+.user{
+  width: 90%;
+  background: white;
+  /* text-align: center; */
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  top: 40%;
+  height: 20vh;
+  /* margin-bottom: 20rpx; */
+  border-radius: 25rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.head{
+  position: absolute;
+  left: 80rpx;
+  top: -50rpx;
+}
+.headele{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  box-shadow: 5rpx 5rpx 5rpx #999;
+  
+}
+.name{
+  font-weight: bold;
+}
+.rank{
+  position: absolute;
+  left: 220rpx;
+  top: 10rpx;
+  width: 80rpx;
+  height: 40rpx;
+  background: white;
+  border-radius: 50rpx;
+  box-shadow: 2rpx 2rpx 2rpx #999;
+  text-align: center;
+}
+.vip{
+  width: 20rpx;
+  height: 25rpx;
+}
+.rankNum{
+  font-size: 25rpx;
+  color: rgb(255,198,30);
+}
+.welcome{
+  position: absolute;
+  top:13vh ;
+  display: inline-block;
+  width: 400rpx;
+  border-top: 4rpx solid rgb(255,198,30);
+  font-size: 36rpx;
+}
+.bottom{
+  position: absolute;
+  /* background: rgb(255,198,30); */
+  top: 55%;
+  /* height: 20vh; */
+  width: 100%;
+  /* display: flex;
+  justify-content: space-around; */
+}
+.all{
+  position: absolute;
+  left: 0;
+  top: 80%;
+  width: 100%;
+  line-height: 16vh;
+  height: 16vh;
+}
+.phone,.admin,.feedback{
+  width: 100%;
+  line-height: 8vh;
+  height: 8vh;
+  background: white;
+  display: flex;
+  border-bottom: 1px solid #999;
+  /* background: white;
+  width: 160rpx;
+  display: inline-block; */
+}
+/* .feedback{
+  width: 100%;
+  line-height: 8vh;
+  height: 8vh;
+  background: white;
+  display: flex;
+
+} */
+.login{
+  font-weight: bold;
+}
+.btn{
+  width: 100% !important;
+  height: 100%;
+  line-height: 8vh;
+  padding: 0;
+  margin: 0 !important;
+  /* line-height:8vh; */
+  background: white;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  /* display: inline-block; */
+}
+.toRight{
+  /* display: inline-block;
+  height: 100%; */
+  flex: 1;
+  text-align: right;
+}
+/* .brn::after{
+  border:none;
+  border-radius: 0;
+} */
+/* .admin,.feedback,.call{
+  border: 1px solid #999;
+  background-color: rgb(167,213,0);
+  background: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.51yuansu.com%2Fpic3%2Fcover%2F02%2F17%2F26%2F59aec32ab0add_610.jpg&refer=http%3A%2F%2Fpic.51yuansu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1619352302&t=aac267d1dfc8c92e3ec352ab3aa9e1ce') no-repeat ;
+  background-size: cover;
+}
+.feedback{
+  background: url('https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3533025826,3803548470&fm=26&gp=0.jpg') no-repeat ;
+} */
+.admin,.feedback,.call{
+  /* height: 20vh;
+  border-radius: 25rpx;
+  background: white url('https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1389064123,2434922710&fm=26&gp=0.jpg') no-repeat ;
+  background-size: contain;
+  line-height: 35vh; */
+}
+/* .admin{
+  width: 100%;
+  height: 85rpx;
+  line-height: 85rpx;
+  font-size: 34rpx;
+  background: green;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #000;
+} */
+
+
+/* .map,.person,.admin{
+  width: 100%;
+  height: 85rpx;
+  line-height: 85rpx;
+  font-size: 34rpx;
+  background: green;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #000;
+}
+.person{
+  background: deepskyblue;
+}
+.admin{
+  background: deeppink;
+} */

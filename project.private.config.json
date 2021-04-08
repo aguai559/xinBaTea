@@ -1,0 +1,59 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "菜单分类",
+          "pathName": "pages/menu/menu",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的页面",
+          "pathName": "pages/me/me",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "地图",
+          "pathName": "pages/map/map",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "订单",
+          "pathName": "pages/order/order",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "管理员登录",
+          "pathName": "pages/adminLogin/adminLogin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "管理员订单",
+          "pathName": "pages/adminOrder/adminOrder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "店员",
+          "pathName": "pages/people/people",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

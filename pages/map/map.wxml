@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="top">
+    <image src="cloud://wihabing-4gw9evgy6af01a88.7769-wihabing-4gw9evgy6af01a88-1305214762/宣喜茶.jpg" class="left"></image>
+    <view class="right">
+      <text>辛巴克咖啡馆</text>
+      <view class="location">
+        <text class="iconfont icon-location"></text>
+        <text>广州市海珠区仲恺路500号</text>
+      </view>
+      <view class="phone">
+        <text class="iconfont icon-dianhua"></text>
+        <text>123456879</text>
+      </view>
+      <text></text>
+    </view>
+  </view>
+  <map class="map" longitude="113.281481" latitude="23.106021" scale="15" markers="{{markers}}" ></map>
+  <view class="bottom">
+    <view class="subway">
+      <text class="iconfont icon-guangzhouditie"></text>
+      <text>地铁2号线江南西站E出口</text>
+    </view>
+    <view>
+      <text class="iconfont icon-gongjiao"></text>
+      <!-- <text>公交路线指引：</text> -->
+      <text>海印桥南：91路、285路</text>
+    </view>
+  </view>
+</view>

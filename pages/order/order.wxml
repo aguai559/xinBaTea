@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="top">全部订单</view>
+  <view class="main">
+    <scroll-view class="scroll" scroll-y="true" wx:if="{{orderList}}">
+      <view wx:for="{{orderList}}" wx:key='index' class="orderItem">
+        <view class="isbuy">
+          已付款
+        </view>
+        <view class="center">
+          <image src="{{item.image[0]}}" class="img"></image>
+          <view class="imgRight">
+            <view>
+              <text class="buy">{{item.buy}}</text>
+            </view>
+            <view class="time">
+              {{item.date}}
+            </view>
+            <view class="price">
+              实付：￥{{item.price}}
+            </view>
+          </view>
+        </view>
+        <view class="isfinish">
+          {{item.isfinish}},共{{item.totalNum}}件
+        </view>
+      </view>
+    </scroll-view>
+    <!-- <view wx:if="{{!orderList}}">
+      <view>您还没有点餐哦</view>
+      <navigator open-type="">去登录</navigator>
+    </view> -->
+  </view>
+</view>

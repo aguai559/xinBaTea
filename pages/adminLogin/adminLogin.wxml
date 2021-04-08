@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="login">
+    <form class="form" bindsubmit="submit">
+      <label for="username">
+        账号：
+      </label>
+      <input type="text" id="username" name='username'/>
+    
+      <label for="password">
+        密码：
+      </label>
+      <input type="password" id="password" name='password'/>
+      <button class="mini-btn btn" form-type="submit" size="mini">登录</button>
+    </form>
+  </view>
+</view>

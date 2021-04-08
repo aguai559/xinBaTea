@@ -1,0 +1,57 @@
+<view class="container">
+  <!-- 背景图 -->
+  <image src="cloud://wihabing-4gw9evgy6af01a88.7769-wihabing-4gw9evgy6af01a88-1305214762/banner.jpg" class="back"></image>
+  <!-- 登录按钮 -->
+  <button open-type="getUserInfo" lang="zh_CN" bindtap="onGotUserInfo" wx:if="{{!openid}}">登录</button>
+  <!-- 头像及昵称 -->
+  
+    <view class="user" wx:if="{{openid}}">
+      <view class="head">
+        <image src="{{userInfo.avatarUrl}}" class="headele"></image>
+        <text class="name">{{userInfo.nickName}}</text>
+      </view>
+      <view class="rank">
+        <image src="/image/vip.png" class="vip"></image>
+        <text class="rankNum">{{rank}}</text>
+        
+      </view>
+      <text class="welcome">欢迎回来~</text>
+    </view>
+  
+  <!-- 周边 -->
+  <!-- <view class="map">
+    <text>周边服务</text>
+    <text class="iconfont icon-xiangyou"></text>
+  </view> -->
+  <!-- 个人资料 -->
+  <!-- <view class="person">
+    <text>个人资料</text>
+    <text class="iconfont icon-xiangyou"></text>
+  </view> -->
+  <view class="bottom">
+    <view class="admin" bindtap="toAdmin">
+      <text class="login">商家登录</text>
+      <text class="iconfont icon-xiangyou toRight"></text>
+    </view>
+    <view class="phone">
+      <button open-type="contact" class="btn">在线客服</button>
+      <text class="iconfont icon-xiangyou toRight"></text>
+    </view>
+    <view class="feedback">
+		  <button open-type="feedback" class="btn">投诉建议</button>
+		  <text class="iconfont icon-xiangyou toRight"></text>
+	  </view>
+    <!-- <view class="feedback" bindtap="toAdmin">
+      <text>意见反馈</text>
+      <text class="iconfont icon-xiangyou"></text>
+    </view> -->
+    <!-- <view class="call" bindtap="toAdmin">
+      <text>意见反馈</text>
+      <text class="iconfont icon-xiangyou"></text>
+    </view> -->
+
+  </view>
+  <view class="all">
+    
+  </view>
+</view>

@@ -1,0 +1,51 @@
+<view class="container">
+  <swiper autoplay="true" interval="2000" circular="true" indicator-dots>
+    <swiper-item wx:for="{{list}}" wx:key="index">
+      <image src="{{item.image}}" />
+    </swiper-item>
+  </swiper>
+  <view class="order">
+    <view class="here" bindtap="goMarket">
+      <!-- <image src="https://7769-wihabing-4gw9evgy6af01a88-1305214762.tcb.qcloud.la/png/here.png"></image> -->
+      <text class="txt">在线点，到店取</text>
+      <text class="iconfont icon-diancan"></text>
+      
+    </view>
+    <view class="center"></view>
+    <view class="take" bindtap="scan">
+      <!-- <image src="cloud://wihabing-4gw9evgy6af01a88.7769-wihabing-4gw9evgy6af01a88-1305214762/png/take.png"></image> -->
+      <text class="txt">扫码点餐</text>
+      <text class="iconfont icon-scan"></text>
+    </view>
+  </view>
+  <!-- <view class="flash">
+    <view class="flash-top">限时特卖</view>
+    <view class="flash-bottom">
+      <view wx:for="{{flash}}" wx:key="index" class="flash-item">
+        <image src="{{item.image}}"></image>
+        <text class="text">{{item.name}}</text>
+        <view class="price">
+          <text class="nprice">￥{{item.nprice}}</text>
+          <text class="oprice">￥{{item.oprice}}</text>
+        </view>
+      </view>
+    </view>
+  </view> -->
+  <view class="bottom">
+    <view class="title">关于咖啡馆</view>
+    <view class="main">
+      <view class="map" bindtap="goMap">
+        <text class="iconfont icon-dingwei location"></text>
+        <text>导航</text>
+      </view>
+      <!-- <view class="about" bindtap="goAbout">
+        <text class="iconfont icon-shu book"></text>
+        <text>关于</text>
+      </view> -->
+      <view class="about" bindtap="goPeople">
+        <text class="iconfont icon-ren book"></text>
+        <text>店员</text>
+      </view>
+    </view>
+  </view>
+</view>

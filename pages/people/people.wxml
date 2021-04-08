@@ -1,0 +1,10 @@
+<view class="container">
+  <view wx:for="{{clerkData}}" wx:key='index' class="clerk">
+    <image src="{{item.image}}" class="photo"></image>
+    <view class="right">
+      <text>昵称：{{item.name}}</text>
+      <text>职位：{{item.position}}</text>
+      <text>格言：{{item.saying}}</text>
+    </view>
+  </view>
+</view>
